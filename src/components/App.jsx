@@ -27,9 +27,9 @@ class App extends Component {
              <p className="FTJ">
              <FeatJob></FeatJob>
             </p>
-            <p className="CTM">
+            <div className="CTM">
              <ContactMe></ContactMe>
-            </p>
+            </div>
             <p className="FAF">
              <FactsNFigures></FactsNFigures>
             </p>
