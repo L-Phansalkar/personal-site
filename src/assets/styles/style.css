@@ -3,6 +3,7 @@
   }
   .App-title{
     line-height: .25;
+   
   }
   .App-logo {
     height: 300px;
@@ -11,8 +12,8 @@
   }
   
   .App-header {
-    background-color: #0c2036;
     position: sticky; top: 0;
+    background-color: #0c2036;
     height: 150px;
     padding: 20px;
     align-items: center;
@@ -234,7 +235,7 @@
   padding: 10px;
   
 }
-.FTP, .FTJ, .CTM, .FAF{
+.FTP, .FTJ, .FAF{
   display: inline;
   width: 25%;
   padding:20px;
@@ -244,4 +245,13 @@
 .ContactMe{
   background-color: #6499da;
   padding: 10px;
+  text-align: center;
+}
+.CTM{
+  width: 40%;
+}
+
+.resp{
+  text-align: left;
+  padding-left: 20px;
 }
