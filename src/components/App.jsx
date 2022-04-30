@@ -4,6 +4,7 @@ import AboutMe from './AboutMe'
 import ContactMe from './ContactMe'
 import FeatProj from './FeatProj'
 import FeatJob from './FeatJob'
+import FactsNFigures from './FactsNFigures'
 import CodingLangs from './CodingLangs'
 
 class App extends Component {
@@ -28,6 +29,9 @@ class App extends Component {
             </p>
             <p className="CTM">
              <ContactMe></ContactMe>
+            </p>
+            <p className="FAF">
+             <FactsNFigures></FactsNFigures>
             </p>
             </div>
           </div>

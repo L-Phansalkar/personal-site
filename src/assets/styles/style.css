@@ -12,6 +12,7 @@
   
   .App-header {
     background-color: #0c2036;
+    position: sticky; top: 0;
     height: 150px;
     padding: 20px;
     align-items: center;
@@ -175,11 +176,11 @@
   }
   77% {
     top: -22.5rem;
-    width: 190px;
+    width: 285px;
   }
   80% {
     top: -22.5rem;
-    width: 190px;
+    width: 285px;
   }
   82% {
     top: -22.5rem;
@@ -192,11 +193,11 @@
   }
   90% {
     top: -27rem;
-    width: 190px;
+    width: 285px;
   }
   93% {
     top: -27rem;
-    width: 190px;
+    width: 285px;
   }
   95% {
     top: -27rem;
@@ -228,12 +229,12 @@
   width: 50%;
 }
 
-.FeatProj, .FeatJob{
+.FeatProj, .FeatJob, .Facts{
   background-color: #0658b0;
   padding: 10px;
   
 }
-.FTP, .FTJ, .CTM{
+.FTP, .FTJ, .CTM, .FAF{
   display: inline;
   width: 25%;
   padding:20px;
