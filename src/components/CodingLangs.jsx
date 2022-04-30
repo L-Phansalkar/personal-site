@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 class CodingLangs extends Component {
     render() {
         return (
-            <div class="codingLang">
+            <div className="codingLang">
             <h1>
-            <span>✅</span>
+            <span>-></span>
             <div className="message">
             <div className="word1">JavaScript</div>
             <div class="word2">React/Redux</div>

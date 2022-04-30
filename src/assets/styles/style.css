@@ -1,9 +1,9 @@
 .App {
     text-align: center;
   }
-  .App-title{
+   .App-title{
     line-height: .25;
-   
+    
   }
   .App-logo {
     height: 300px;
@@ -12,16 +12,17 @@
   }
   
   .App-header {
-    position: sticky; top: 0;
     background-color: #0c2036;
-    height: 150px;
+    height:200px;
     padding: 20px;
+    padding-bottom: 0px;
     align-items: center;
     justify-content: center;
     -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
     -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
     box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   }
+
   
   .App-intro {
     font-size: large;
@@ -31,6 +32,7 @@
     background-color: #b3cae2;
     text-align: left;
     padding-left:40%;
+    
   }
   
 .codingLang body {
@@ -57,7 +59,7 @@
 .message {
   background-color: rgba(255, 255, 0, 0.618);
   color: #333;
-  display: inline-block;
+  display: inline;
   text-align: center;
   /* font-weight: 900; */
   overflow: hidden;
@@ -75,7 +77,7 @@
 
 @keyframes openclose {
   0% {
-    top: 0.2rem;
+    
     width: 0;
   }
   5% {
@@ -219,7 +221,7 @@
   flex-wrap:wrap
 }
 
-.AboutMe{
+.AboutMe, .Facts{
   background-color: #226ec0;
   padding: 10px;
   
@@ -230,7 +232,7 @@
   width: 50%;
 }
 
-.FeatProj, .FeatJob, .Facts{
+.FeatProj, .FeatJob {
   background-color: #0658b0;
   padding: 10px;
   
