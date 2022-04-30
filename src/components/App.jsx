@@ -1,17 +1,35 @@
 import React, { Component } from 'react';
-import logo from '../assets/images/logo.svg';
+import logo from '../assets/images/selfie.jpeg';
+import AboutMe from './AboutMe'
+import ContactMe from './ContactMe'
+import FeatProj from './FeatProj'
+import FeatJob from './FeatJob'
+import CodingLangs from './CodingLangs'
 
 class App extends Component {
     render() {
         return (
             <div className="App">
             <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-              <h1 className="App-title">Welcome to React</h1>
+            <h1 className="App-title">L PHANSALKAR</h1>
+            <h2 className="App-title">fullstack software engineer</h2>
+              <CodingLangs></CodingLangs>
             </header>
-            <p className="App-intro">
-              To get started, edit <code>src/App.js</code> and save to reload.
+            <div className="MainBody">
+            <img src={logo} className="App-logo" alt="logo" />
+            <p className="ABM">
+             <AboutMe></AboutMe>
+             </p>
+             <p className="FTP">
+             <FeatProj></FeatProj>
+             </p>
+             <p className="FTJ">
+             <FeatJob></FeatJob>
             </p>
+            <p className="CTM">
+             <ContactMe></ContactMe>
+            </p>
+            </div>
           </div>
         );
     }
