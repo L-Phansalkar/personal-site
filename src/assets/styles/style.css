@@ -227,7 +227,7 @@
 .ABM{
   display: inline;
   padding:20px;
-  width: 50%;
+  width:48%
 }
 
 .FeatProj, .FeatJob {
@@ -235,9 +235,14 @@
   padding: 10px;
   
 }
-.FTP, .FTJ, .FAF{
+.FTP, .FTJ {
   display: inline;
   width: 25%;
+  padding:20px;
+  padding-top:0px;
+}
+.FAF{
+  width:32%;
   padding:20px;
   padding-top:0px;
 }
@@ -248,10 +253,119 @@
   text-align: center;
 }
 .CTM{
-  width: 40%;
+  width: 35%;
 }
 
 .resp{
   text-align: left;
   padding-left: 20px;
 }
+input[type="radio"] {
+  position: absolute;
+ 
+  width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+  height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+  .container label{
+    display:block;
+    width:20%;
+    border: 4px solid white;
+    position:absolute;
+    bottom:5px;
+    transition: border-color 0.3s linear;
+  }
+  
+  label.second{
+    left:34%;
+  }
+  label.third{
+    left:68%;
+  }
+  
+  blockquote{
+    margin:02;
+    padding:30px;
+    background-color: #6ce3ed;
+    color: #0c2036;
+    box-shadow: 0 5px 2px rgba(0,0,0,0.1);
+    transition: background-color 0.6s linear ;
+  }
+  
+  .two blockquote:after{
+    border: solid transparent; 
+    border-top-color: purple;
+    border-left-color:purple;
+    border-width: 10px;
+  }
+  
+  .three blockquote:after{
+    border: solid transparent; 
+    border-top-color: #54885F;
+    border-left-color: #54885F;
+    border-width: 10px;
+  }
+  .quotes{
+    position:absolute;
+    align-items: center;
+    color:rgba(255,255,255,0.5);
+    font-size:5em;
+  }
+
+  img{
+    float:left;
+    margin-right: 20px;
+  }
+  .slide{
+    position:absolute;
+    margin:auto;
+    left:-100%;
+    opacity:0;
+    transition: all 0.6s ease-in;
+  }
+  
+  #first:checked ~ label.first {
+    border-width:6px;
+    border-color:#DB532B;
+  }
+  #second:checked ~ label.second {
+    border-width:6px; border-color:purple;
+  }
+  #third:checked ~ label.third {
+    border:6px solid #54885F;
+  }
+  
+  #first:checked ~ div.one {
+    left:0;
+    opacity:1;
+  }
+  #second:checked ~ div.two {
+    left:0;
+    opacity:1;
+  }
+  #third:checked ~ div.three {
+    left:0;
+    opacity:1;
+  }
+
+  a{
+    color:#ccc;
+  }
+  .container{
+    width:500px;
+    min-height:315px;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+  }
+  .Factbox{
+    display: flex;
+    direction: column;
+  }
+  .slide h3{
+    line-height: .25;
+  }

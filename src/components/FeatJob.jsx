@@ -20,15 +20,7 @@ class FeatJob extends Component {
                     <br></br>
                     Transferrable skills: 
                     <br></br>
-                    Responsibilities:
-                    <div className= 'resp'>
-                    -> Tutored and mentored students in core subjects and socio-emotional skills. 
-                    <br></br>-> Created and implemented data-driven individual and small group lesson plans. 
-                    <br></br>-> Managed six of my peers, and was responsible for the safety of 35 students. 
-                    <br></br>-> Developed and executed after school programming and provided homework help. 
-                    <br></br>-> Conducted parent phone calls and check-ins for absent students. 
-                    <br></br>-> Collaborated with a small, diverse group of City Year Philadelphia corps members across schools working to improve the City Year experience for all.
-                    </div>
+                    
                 </p>
             </div>
             )}
