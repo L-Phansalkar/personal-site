@@ -13,7 +13,7 @@ class AboutMe extends Component {
                 <p></p>
                 I am currently looking for full stack and/or backend software engineer opportunities.
                 <p></p>
-                To view my resume, <a href={trm}>click here</a>
+                To view my resume, <a href="javascript:window.open('/images/trmm_68bac5f.jpg','mypopuptitle','width=1100,height=900')">click here</a>
             </div>
             )}
 }

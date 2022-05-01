@@ -19,24 +19,24 @@ class FactsNFigures extends Component {
     <blockquote>
       He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I was pleased with his creative design and will definitely be hiring him again. 
     </blockquote>
-    <h2>Supervisor</h2>
-    <h3>92Y Camps</h3>
+    <h2>92Y Camps</h2>
+    <h3>position: Supervisor</h3>
   </div>
   
   <div class="two slide">
     <blockquote>
  He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I recommend him to anyone who wants their work done professionally. The project.
     </blockquote>
-    <h2>John Doe</h2>
-    <h3>Developer Relations at Woof Studios</h3>
+    <h2></h2>
+    <h3>position:</h3>
   </div>
   
   <div class="three slide">
     <blockquote>
     He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I was pleased with his creative design and will definitely be hiring him again.
     </blockquote>
-    <h2>Steve Stevenson</h2>
-    <h3>CEO Woof Web Design Studios</h3>
+    <h2></h2>
+    <h3>position:</h3>
   </div>
     </div>
  </div>
