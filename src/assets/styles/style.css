@@ -3,7 +3,6 @@
   }
    .App-title{
     line-height: .25;
-    
   }
   .App-logo {
     height: 300px;
@@ -77,7 +76,6 @@
 
 @keyframes openclose {
   0% {
-    
     width: 0;
   }
   5% {

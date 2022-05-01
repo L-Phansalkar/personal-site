@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 class ContactMe extends Component {
  formSubmit(e) {
     var form = document.getElementById("form");
-form.addEventListener("submit", formSubmit);
+form.addEventListener("submit", formSubmit(e));
     e.preventDefault();
-
     const formData = new FormData();
     formData.append(
         'name',
@@ -28,7 +27,7 @@ form.addEventListener("submit", formSubmit);
             <div className="ContactMe">
                 <h3><b>CONTACT ME:</b></h3> 
                 <html>
-                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php"> </form>
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="./contact-form-process.php"> </form>
             <label for="Name" class="fcf-label">Your name</label>
             <div class="fcf-input-group">
                 <input type="text" id="Name" name="Name" class="fcf-form-control" required></input>
