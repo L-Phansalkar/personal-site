@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import logo from '../assets/images/selfie.jpeg';
 import AboutMe from './AboutMe'
-import ContactMe from './ContactMe'
 import FeatProj from './FeatProj'
 import FeatJob from './FeatJob'
 import FactsNFigures from './FactsNFigures'
 import CodingLangs from './CodingLangs'
+import ContactMe from "./ContactMe";
 
 class App extends Component {
     render() {
@@ -28,7 +28,7 @@ class App extends Component {
              <FeatJob></FeatJob>
             </p>
             <div className="CTM">
-             <ContactMe></ContactMe>
+            <ContactMe></ContactMe>
             </div>
             <p className="FAF">
              <FactsNFigures></FactsNFigures>
