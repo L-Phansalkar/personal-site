@@ -5,7 +5,6 @@ import App from "./components/App";
 
 import "./assets/styles/style.sass";
 import "./assets/styles/style.css";
-import "./assets/images/favicon.ico";
 
 ReactDOM.render(React.createElement(App), document.getElementById("root"));
 
