@@ -10,8 +10,10 @@ class FeatJob extends Component {
                     <i>Aug 2012 - Feb 2017</i>
                     <br></br>
                     Transferrable skills: 
-                    <br></br>
-                    I did stuff 
+                    <br></br> 
+                    -> experience with MailChimp, HootSuite, and CSS/HTML
+                    <br></br> 
+                    -> supported growth of company from a single excel spreadsheet to a live website with strong social media presence 
                 </p>
                 <p className= 'cy'>
                     <u>City Year</u> | Americorps Member 
@@ -20,8 +22,14 @@ class FeatJob extends Component {
                     <br></br>
                     Transferrable skills: 
                     <br></br>
-                    
-                </p>
+                    -> managed team of peers to successfully run an acclaimed after-school organization 
+                    <br></br> 
+                    -> created strategic partnerships with school personnel, families, and surrounding community
+                    <br></br>
+                    -> leveraged these partnerships and effectively delivered academic intervention to ensure a continued relationship between school placement and City Year 
+                    <br></br>
+                    -> assumed internal leadership role and collaborated with other City Year representatives across schools to collect employee feedback and enact company-wide changes               
+                    </p>
             </div>
             )}
 }

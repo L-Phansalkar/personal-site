@@ -17,7 +17,8 @@ class FactsNFigures extends Component {
  
   <div class="one slide">
     <blockquote>
-      He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I was pleased with his creative design and will definitely be hiring him again. 
+    <u>Supervised</u> <b>9</b> teenage counselors responsible for <b>30</b> second-graders, and supported <b>20</b> second-grade inclusion campers. Acted as <u>parent liaison</u> for <b>50</b> campers and <u>supervised</u> camp bus site of <b>35</b> campers and <b>6</b> counselors. <u>Designed, created and implemented</u> weekly themed activities for <b>200</b> children. 
+
     </blockquote>
     <h2>92Y Camps</h2>
     <h3>position: Supervisor</h3>
@@ -25,18 +26,18 @@ class FactsNFigures extends Component {
   
   <div class="two slide">
     <blockquote>
- He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I recommend him to anyone who wants their work done professionally. The project.
+    Consulted with a faculty member about <b>school wide</b> difficulty with both <u>virtual and in-person</u> attendance. Supported school in <u>Covid-19 transition</u> to blended learning. Provided <b>empirically-based recommendations</b> in a <u>research paper</u> examining the effect of Covid-19 on <b>attendance statistics</b>. 
     </blockquote>
-    <h2></h2>
-    <h3>position:</h3>
+    <h2>Brookyln Academy High School</h2>
+    <h3>position: School Psychology Fieldworker</h3>
   </div>
   
   <div class="three slide">
     <blockquote>
-    He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I was pleased with his creative design and will definitely be hiring him again.
+     Conducted <b>social, academic, and medical</b> history <u>intake sessions</u>. Administered, scored, and interpreted standardized cognitive, academic, and behavioral assessments (in person and virtually) for clients <u>ages</u> <b>7 – 12</b>. Diagnosed educational and psychological disorders according to DSM-V criteria. Provided clients’ parents with evidence-based recommendations for school and home.
     </blockquote>
     <h2></h2>
-    <h3>position:</h3>
+    <h3>position:Graduate Student Evaluator</h3>
   </div>
     </div>
  </div>

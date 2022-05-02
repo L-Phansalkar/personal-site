@@ -1,13 +1,14 @@
 .App {
     text-align: center;
+    
   }
    .App-title{
     line-height: .25;
   }
   .App-logo {
-    height: 300px;
     padding: 20px;
     padding-bottom: 0px;
+    width: 20%
   }
   
   .App-header {
@@ -36,6 +37,7 @@
   
 .codingLang body {
   display: flex;
+  flex-direction: column;
 }
 .codingLang h1 {
   color: #333;
@@ -219,50 +221,62 @@
   flex-wrap:wrap
 }
 
-.AboutMe, .Facts{
+.AboutMe{
   background-color: #226ec0;
-  padding: 10px;
-  
+  align-items: center;
+  justify-content: center;
+  margin:20px;
+  margin-top:100px;
+  height:fit-content;
+  padding: 20px;
+  width: 70%;
+  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
 }
-.ABM{
-  display: inline;
-  padding:20px;
-  width:48%
-}
+
 
 .FeatProj, .FeatJob {
   background-color: #0658b0;
+  margin:20px;
   padding: 10px;
+  width: 30%; 
+  align-items: center;
+  text-align: center; 
+  justify-content: center;
+  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  /* height:30% */
   
 }
-.FTP, .FTJ {
-  display: inline;
-  width: 25%;
-  padding:20px;
-  padding-top:0px;
+
+.Facts{
+  background-color: #226ec0;
+  padding: 10px;
+  margin:20px;
+  width: 100%; 
+  height:fit-content;
+  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
 }
-.FAF{
-  width:32%;
-  padding:20px;
-  padding-top:0px;
-}
+
 
 .ContactMe{
   background-color: #6499da;
   padding: 10px;
   text-align: center;
-}
-.CTM{
-  width: 35%;
+  width: 30%;
+  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  
 }
 
-.resp{
-  text-align: left;
-  padding-left: 20px;
-}
+
 input[type="radio"] {
   position: absolute;
- 
   width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
   height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
   padding: 0;
@@ -377,7 +391,16 @@ input[type="radio"] {
   }
 
   .made{
-    position:relative;
+    margin:20px;
     background-color: #0c2036;
+    height:fit-content;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+    box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   }
+  
+ 
+  
  

@@ -9,7 +9,7 @@ class AboutMe extends Component {
                 <p></p>
                 I graduated from Fullstack Academy (Grace Hopper), having completed 553 hours over a 13-week intensive JavaScript full stack coding program.
                 <p></p>
-                My background is in child psychology and education, and I currently hold a BA from Vassar College and a MA from Teachers College, Columbia University (GPA: 3.9). 
+                My background is in child psychology and education, and I hold a BA from Vassar College and a MA from Teachers College, Columbia University (GPA: 3.9). 
                 <p></p>
                 I am currently looking for full stack and/or backend software engineer opportunities.
                 <p></p>
