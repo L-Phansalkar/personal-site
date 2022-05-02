@@ -369,3 +369,15 @@ input[type="radio"] {
   .slide h3{
     line-height: .25;
   }
+  input{
+    width: 50%
+  }
+  textarea{
+    width: 75%
+  }
+
+  .made{
+    position:relative;
+    background-color: #0c2036;
+  }
+ 

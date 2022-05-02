@@ -33,6 +33,7 @@ class App extends Component {
             <p className="FAF">
              <FactsNFigures></FactsNFigures>
             </p>
+            <p className="made">Made with React | HTML | JSX | CSS</p>
             </div>
           </div>
         );

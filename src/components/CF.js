@@ -28,13 +28,20 @@ const ContactForm = () => {
       target="_blank"
     >
       <div>
-        <input type="text" placeholder="Your name" name="name" required />
+        Name: <input type="text" placeholder="Your name" name="name" required />
       </div>
+      <br></br>
       <div>
-        <input type="email" placeholder="Email" name="email" required />
+        Email: <input type="email" placeholder="Email" name="email" required />
       </div>
+      <br></br>
       <div>
-        <textarea placeholder="Your message" name="message" required />
+        <textarea
+          rows="10"
+          placeholder="Your message"
+          name="message"
+          required
+        />
       </div>
       <div>
         <button type="submit"> Send a message </button>
