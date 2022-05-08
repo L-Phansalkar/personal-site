@@ -29,6 +29,14 @@
         flex: 20%;
       }
 }
+@media (max-width: 369px){
+  h2.App-title{
+    line-height:80%;
+  }
+  header.App-header{
+    height:300px
+  }
+}
 .App-title{
   line-height: .25;
 }
