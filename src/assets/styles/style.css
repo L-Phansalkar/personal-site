@@ -4,6 +4,9 @@
   }
 }
 @media (max-width: 700px) {
+  .App-header{
+    flex: 100%
+  }
   .AboutMe{
     order: 1;
     flex: 100%
@@ -22,18 +25,95 @@
     .Facts{
       order: 6}
       .made{
-        order: 7
+        order: 7;
+        flex: 20%;
       }
 }
+.App-title{
+  line-height: .25;
+}
+.codingLang{
+  background-color: #6499da;
+    text-align: left;
+    padding-left:40%;
+  }
+  
+.codingLang body {
+  display: flex;
+  flex-direction: column;
+}
+.codingLang h1 {
+  color: #333;
+  font-family: tahoma;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  /* text-transform: uppercase;
+  white-space: nowrap; */
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+span{
+  display: center;
+}
+
+.message {
+  background-color: rgba(255, 255, 0, 0.618);
+  color: #333;
+  display: inline;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  width:100%;
+  animation: openclose 50s ease-in-out infinite;
+}
+@media (max-width: 400px){
+  h1.App-title{
+    line-height:80%;
+  }
+ 
+  .codingLang h1 {
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .message {
+    background-color: rgba(255, 255, 0, 0.618);
+    color: #333;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    width:100%;
+    animation: openclose 50s ease-in-out infinite;
+  }
+
+  .codingLang{
+    background-color: #6499da;
+      text-align: left;
+      padding-left:10%;
+    }
+    div.Facts{
+      padding:0px
+    }
+    .FeatProj, .FeatJob{
+      padding:0px
+    }
+  }
+
 .App {
     text-align: center;
     align-items: center;
     justify-content: center;
     
   }
-   .App-title{
-    line-height: .25;
-  }
+ 
   .App-logo {
     padding: 20px;
     padding-bottom: 0px;
@@ -57,49 +137,7 @@
     font-size: large;
   }
   
-  .codingLang{
-  background-color: #6499da;
-    text-align: left;
-    padding-left:40%;
-    
-  }
-  
-.codingLang body {
-  display: flex;
-  flex-direction: column;
-}
-.codingLang h1 {
-  color: #333;
-  font-family: tahoma;
-  font-size: 3rem;
-  font-weight: 100;
-  line-height: 1.5;
-  /* text-transform: uppercase;
-  white-space: nowrap; */
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
 
-
-.span{
-  text-align: center;
-}
-
-.message {
-  background-color: rgba(255, 255, 0, 0.618);
-  color: #333;
-  display: inline;
-  text-align: center;
-  /* font-weight: 900; */
-  overflow: hidden;
-  position: absolute;
-  width:100%;
-  /* padding-left: 0.5rem;
-  top: 0.2rem;
-  left: 450px; */
-  animation: openclose 50s ease-in-out infinite;
-}
 
 * .word {
   font-family: tahoma;
@@ -277,7 +315,6 @@
   -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   /* height:30% */
-  
 }
 
 .Facts{
