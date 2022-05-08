@@ -11,7 +11,7 @@
   .App-logo{
     order: 2;
     flex: 20%;
-    height:750px
+
   }
   .FeatProj{
     order: 3;
@@ -256,7 +256,6 @@
 .AboutMe {
   background-color: #226ec0;
   margin:20px;
-  margin-top:100px;
   height:fit-content;
   padding: 20px;
   width: 60%;
