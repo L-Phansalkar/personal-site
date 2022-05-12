@@ -18,26 +18,12 @@ class App extends Component {
             </header>
             <div className="MainBody">
             <img src={logo} className="App-logo" alt="logo" />
-            
              <AboutMe></AboutMe>
-            
-             
              <FeatProj></FeatProj>
-          
-            
-             
-           
-            
             <ContactMe></ContactMe>
-
             <FeatJob></FeatJob>
-          
-         
              <FactsNFigures></FactsNFigures>
-          
-            
-            <p className="made">made with: React | HTML | JSX | CSS |||| time invested: 15 hrs</p>
-            
+            <p className="made">made with: React | HTML | JSX | CSS </p>
             </div>
           </div>
         );
