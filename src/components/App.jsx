@@ -10,6 +10,7 @@ import CodingLangs from './CodingLangs'
 import ContactMe from "./ContactMe";
 
 import Intro from './Intro'
+import FunProj from './FunProjects'
 
 class App extends Component {
     render() {
@@ -78,6 +79,7 @@ class App extends Component {
               </div>
               <Intro></Intro>
               <ContactMe></ContactMe>
+              <FunProj></FunProj>
               </div>
             <p className="made" >made with: React | HTML | JSX | CSS </p>
             </div>
