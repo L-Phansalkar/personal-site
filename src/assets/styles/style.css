@@ -561,11 +561,13 @@ input[type="radio"] {
   justify-content: center;
 }
 .temp{
+  border-radius: 50%;
   background-color: #ab65ad;
   margin:20px;
-  height:fit-content;
+  height: fit-content;
+  width:height;
   padding: 20px;
-  width: 30%;
+  width: 15%;
   -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
@@ -575,11 +577,12 @@ input[type="radio"] {
   to {background-color: #e9056f}
 }
 .Intro {
+  border-radius: 50%;
   background-color: #54c60e;
   margin:20px;
-  height:fit-content;
   padding: 20px;
-  width: 60%;
+  height: fit-content;
+  width: 28%;
   -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
@@ -604,10 +607,14 @@ input[type="radio"] {
   to {background-color: #3d00ad}
 }
 .FunProj{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
   background-color: #bdbeff;
   margin:20px;
   padding: 10px;
-  width: 25%; 
+  height: fit-content;
+  width:height;
   align-items: center;
   text-align: center; 
   justify-content: center;
