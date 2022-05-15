@@ -538,3 +538,6 @@ input[type="radio"] {
     border-radius: 50%;
   }
   
+  .hidden {
+    visibility:hidden;
+}
