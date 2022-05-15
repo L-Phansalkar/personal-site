@@ -570,6 +570,10 @@ input[type="radio"] {
   -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
 }
+@keyframes intrro {
+  from {background-color: #54c60e}
+  to {background-color: #e9056f}
+}
 .Intro {
   background-color: #54c60e;
   margin:20px;
@@ -579,6 +583,10 @@ input[type="radio"] {
   -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  animation-name: intrro;
+  animation-duration:15s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 .made{
   margin:20px;
@@ -591,7 +599,7 @@ input[type="radio"] {
   -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
 }
-@keyframes purpleyo {
+@keyframes funpro {
   from {background-color: #bdbeff}
   to {background-color: #3d00ad}
 }
@@ -603,7 +611,7 @@ input[type="radio"] {
   align-items: center;
   text-align: center; 
   justify-content: center;
-  animation-name: purpleyo;
+  animation-name: funpro;
   animation-duration:10s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
@@ -611,5 +619,12 @@ input[type="radio"] {
   -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
 }
+body{
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+}
+
+
 
 

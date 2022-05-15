@@ -28,7 +28,9 @@ class App extends Component {
           borapp.classList.add('hidden');
           funapp.classList.remove('hidden');
           document.body.style.backgroundColor = "peru";
+          document.body.style.backgroundImage = "url('https://wfmu.org/Gfx/user_images/agif5_5112702990073496.gif')";
           header.style.backgroundColor = "pink"
+          header.style.opacity = ".5"
           document.body.style.color = "black"
           myname.innerText = "L PHANSALKAR(they/them)"
           mytitle.innerText = "fullstack software engineer && queer coder interested in queercoding"
