@@ -539,5 +539,5 @@ input[type="radio"] {
   }
   
   .hidden {
-    visibility:hidden;
+    display:none
 }

@@ -12,12 +12,19 @@ class App extends Component {
       function valCheck() {
         var remember = document.getElementById("slider");
         var borapp = document.getElementById("borapp")
+        var funapp = document.getElementById("funapp")
+        var myname = document.getElementById("myname");
+        var mytitle = document.getElementById("mytitle")
         if (remember.checked) {
-          console.log("checked");
           borapp.classList.add('hidden');
+          funapp.classList.remove('hidden');
+          myname.innerText = "L PHANSALKAR(they/them)"
+          mytitle.innerText = "fullstack software engineer && queer coder interested in queercoding"
         } else {
-          console.log("You didn't check it! Let me check it for you.");
+          funapp.classList.add('hidden');
           borapp.classList.remove('hidden');
+          myname.innerText = "NOELLE PHANSALKAR"
+          mytitle.innerText = "fullstack software engineer"
         }
       }
         return (
@@ -27,11 +34,11 @@ class App extends Component {
               <input type="checkbox" id="slider" onClick = {valCheck}></input>
               <span class="slider round"></span>
             </label>
-            
-            <h1 className="App-title">NOELLE PHANSALKAR</h1>
-            <h2 className="App-title">fullstack software engineer</h2>
+            <h1 className="App-title" id= "myname">NOELLE PHANSALKAR</h1>
+            <h2 className="App-title" id = "mytitle">fullstack software engineer</h2>
               <CodingLangs></CodingLangs>
             </header>
+
             <div className="MainBody" id ="borapp">
             <img src={logo} className="App-logo" alt="logo" />
              <AboutMe></AboutMe>
@@ -39,10 +46,11 @@ class App extends Component {
             <ContactMe></ContactMe>
             <FeatJob></FeatJob>
              <FactsNFigures></FactsNFigures>
-             
             <p className="made">made with: React | HTML | JSX | CSS </p>
             </div>
-            
+            <div className="FunBody" id ="funapp" class ="hidden">
+            <h1>hi there! i'm updating my personal site: more to come soon!</h1>
+            </div>
           </div>
         );
     }
