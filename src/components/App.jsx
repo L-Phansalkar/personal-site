@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import logo from '../assets/images/selfie.jpeg';
 import togo from '../assets/images/profeshi.jpg'
+
 import AboutMe from './AboutMe'
 import FeatProj from './FeatProj'
 import FeatJob from './FeatJob'
 import FactsNFigures from './FactsNFigures'
 import CodingLangs from './CodingLangs'
 import ContactMe from "./ContactMe";
+
+import Intro from './Intro'
 
 class App extends Component {
     render() {
@@ -70,6 +73,7 @@ class App extends Component {
               <div className = "temp">
               <h1>hi there! i'm updating my personal site: more to come soon!</h1>
               </div>
+              <Intro></Intro>
               <ContactMe></ContactMe>
               </div>
             <p className="made" >made with: React | HTML | JSX | CSS </p>
