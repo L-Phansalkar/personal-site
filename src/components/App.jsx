@@ -12,6 +12,10 @@ class App extends Component {
         return (
             <div className="App">
             <header className="App-header">
+              <label class="switch">
+              <input type="checkbox" id="slider"></input>
+              <span class="slider round"></span>
+            </label>
             <h1 className="App-title">NOELLE PHANSALKAR</h1>
             <h2 className="App-title">fullstack software engineer</h2>
               <CodingLangs></CodingLangs>
