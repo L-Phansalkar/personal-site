@@ -545,14 +545,23 @@ input[type="radio"] {
 /* funapp */
 
 .FunBody {
+  background-color: peru;
+  color: black;
+}
+.funbox{
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
   flex-basis: 0;
   align-items: center;
   justify-content: center;
-  background-color: peru;
 }
-#funapp{
-  background-color: peru;
+.temp{
+  margin:20px;
+  height:fit-content;
+  padding: 20px;
+  width: 30%;
+  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
 }

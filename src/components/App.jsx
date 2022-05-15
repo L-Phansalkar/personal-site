@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../assets/images/selfie.jpeg';
+import togo from '../assets/images/profeshi.jpg'
 import AboutMe from './AboutMe'
 import FeatProj from './FeatProj'
 import FeatJob from './FeatJob'
@@ -18,6 +19,7 @@ class App extends Component {
         var header= document.getElementById("appheader")
 
         if (remember.checked) {
+          // for the fun app
           borapp.classList.add('hidden');
           funapp.classList.remove('hidden');
           document.body.style.backgroundColor = "peru";
@@ -25,9 +27,12 @@ class App extends Component {
           document.body.style.color = "black"
           myname.innerText = "L PHANSALKAR(they/them)"
           mytitle.innerText = "fullstack software engineer && queer coder interested in queercoding"
-        } else {
-          funapp.classList.add('hidden');
+        } 
+        
+        else {
+          // for the homepage/ boring app
           borapp.classList.remove('hidden');
+          funapp.classList.add('hidden');
           document.body.style.backgroundColor = "#4a6c8e";
           header.style.backgroundColor = "#0c2036"
           document.body.style.color = "white"
@@ -35,6 +40,7 @@ class App extends Component {
           mytitle.innerText = "fullstack software engineer"
         }
       }
+
         return (
             <div className="App" >
             <header className="App-header" id="appheader">
@@ -59,14 +65,17 @@ class App extends Component {
 
 
             <div className="FunBody" id ="funapp" class ="hidden">
-              <div class="triangle-down">
-              hi there! i'm updating my personal site: more to come soon!
+            <div className = "funbox">
+              <img src={togo} className="App-logo" alt="logo" />
+              <div className = "temp">
+              <h1>hi there! i'm updating my personal site: more to come soon!</h1>
               </div>
-            <p className="made">made with: React | HTML | JSX | CSS </p>
+              <ContactMe></ContactMe>
+              </div>
+            <p className="made" >made with: React | HTML | JSX | CSS </p>
             </div>
           </div>
         );
     }
 } 
-
 export default App;
