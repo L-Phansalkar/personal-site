@@ -15,21 +15,29 @@ class App extends Component {
         var funapp = document.getElementById("funapp")
         var myname = document.getElementById("myname");
         var mytitle = document.getElementById("mytitle")
+        var header= document.getElementById("appheader")
+
         if (remember.checked) {
           borapp.classList.add('hidden');
           funapp.classList.remove('hidden');
+          document.body.style.backgroundColor = "peru";
+          header.style.backgroundColor = "pink"
+          document.body.style.color = "black"
           myname.innerText = "L PHANSALKAR(they/them)"
           mytitle.innerText = "fullstack software engineer && queer coder interested in queercoding"
         } else {
           funapp.classList.add('hidden');
           borapp.classList.remove('hidden');
+          document.body.style.backgroundColor = "#4a6c8e";
+          header.style.backgroundColor = "#0c2036"
+          document.body.style.color = "white"
           myname.innerText = "NOELLE PHANSALKAR"
           mytitle.innerText = "fullstack software engineer"
         }
       }
         return (
             <div className="App" >
-            <header className="App-header">
+            <header className="App-header" id="appheader">
               <label class="switch">
               <input type="checkbox" id="slider" onClick = {valCheck}></input>
               <span class="slider round"></span>
@@ -48,8 +56,13 @@ class App extends Component {
              <FactsNFigures></FactsNFigures>
             <p className="made">made with: React | HTML | JSX | CSS </p>
             </div>
+
+
             <div className="FunBody" id ="funapp" class ="hidden">
-            <h1>hi there! i'm updating my personal site: more to come soon!</h1>
+              <div class="triangle-down">
+              hi there! i'm updating my personal site: more to come soon!
+              </div>
+            <p className="made">made with: React | HTML | JSX | CSS </p>
             </div>
           </div>
         );

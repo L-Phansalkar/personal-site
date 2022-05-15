@@ -476,7 +476,7 @@ input[type="radio"] {
   }
   
   .switch {
-    position: fixed;
+    position: absolute;
     display: block;
     width: 60px;
     height: 34px;
@@ -540,4 +540,19 @@ input[type="radio"] {
   
   .hidden {
     display:none
+}
+
+/* funapp */
+
+.FunBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  flex-basis: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: peru;
+}
+#funapp{
+  background-color: peru;
 }
