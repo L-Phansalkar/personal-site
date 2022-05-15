@@ -517,6 +517,9 @@ input[type="radio"] {
   
   input:checked + .slider {
     background-color: #2196F3;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 20s, opacity 20s linear;
   }
   
   input:focus + .slider {
@@ -542,6 +545,7 @@ input[type="radio"] {
     display:none
 }
 
+
 /* funapp */
 
 .FunBody {
@@ -557,6 +561,7 @@ input[type="radio"] {
   justify-content: center;
 }
 .temp{
+  background-color: #ab65ad;
   margin:20px;
   height:fit-content;
   padding: 20px;

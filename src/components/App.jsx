@@ -23,6 +23,7 @@ class App extends Component {
 
         if (remember.checked) {
           // for the fun app
+          
           borapp.classList.add('hidden');
           funapp.classList.remove('hidden');
           document.body.style.backgroundColor = "peru";
@@ -45,7 +46,9 @@ class App extends Component {
       }
 
         return (
+          
             <div className="App" >
+              
             <header className="App-header" id="appheader">
               <label class="switch">
               <input type="checkbox" id="slider" onClick = {valCheck}></input>
