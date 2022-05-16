@@ -5,7 +5,7 @@ class CodingLangs extends Component {
             <div className="codingLang">
             <h1>
             <span>-></span>
-            <div className="message">
+            <div className="message" id ="hili">
             <div className="word1">JavaScript</div>
             <div class="word2">React/Redux</div>
             <div class="word4">PostgreSQL</div>

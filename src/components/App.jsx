@@ -21,16 +21,19 @@ class App extends Component {
         var myname = document.getElementById("myname");
         var mytitle = document.getElementById("mytitle")
         var header= document.getElementById("appheader")
+        var flag = document.getElementById("flag")
+        var hili = document.getElementById("hili")
 
         if (remember.checked) {
           // for the fun app
           
           borapp.classList.add('hidden');
           funapp.classList.remove('hidden');
-          document.body.style.backgroundColor = "peru";
+          document.body.style.backgroundColor = "black";
           document.body.style.backgroundImage = "url('https://wfmu.org/Gfx/user_images/agif5_5112702990073496.gif')";
           header.style.backgroundColor = "pink"
-          header.style.opacity = ".5"
+          flag.style.backgroundColor = "white"
+          hili.style.backgroundColor = "white"
           document.body.style.color = "black"
           myname.innerText = "L PHANSALKAR(they/them)"
           mytitle.innerText = "fullstack software engineer && queer coder interested in queercoding"
@@ -38,6 +41,8 @@ class App extends Component {
         
         else {
           // for the homepage/ boring app
+          flag.style.backgroundColor = "";
+          hili.style.backgroundColor = "rgba(255, 255, 0, 0.618)";
           borapp.classList.remove('hidden');
           funapp.classList.add('hidden');
           document.body.style.backgroundColor = "#4a6c8e";
@@ -57,8 +62,10 @@ class App extends Component {
               <input type="checkbox" id="slider" onClick = {valCheck}></input>
               <span class="slider round"></span>
             </label>
+            <div id ="flag">
             <h1 className="App-title" id= "myname">NOELLE PHANSALKAR</h1>
             <h2 className="App-title" id = "mytitle">fullstack software engineer</h2>
+            </div>
               <CodingLangs></CodingLangs>
             </header>
 
