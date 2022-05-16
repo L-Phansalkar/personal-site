@@ -83,13 +83,17 @@ class App extends Component {
 
             <div className="FunBody" id ="funapp" class ="hidden">
             <div className = "funbox">
+            <div className= "child1">
               <img src={togo} className="App-togo" />
               <div className = "temp">
               <h1>hi there! i'm updating my personal site: more to come soon!</h1>
               </div>
               <Intro></Intro>
+              </div>
+              <div className= "child2">
               <ContactMe></ContactMe>
               <FunProj></FunProj>
+              </div>
               </div>
             <p className="made" >made with: React | HTML | JSX | CSS </p>
             </div>

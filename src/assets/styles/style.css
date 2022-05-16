@@ -554,20 +554,33 @@ input[type="radio"] {
 }
 .funbox{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap:wrap;
   flex-basis: 0;
+  /* align-items: center;
+  justify-content: center; */
+  
+}
+.child1{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   align-items: left;
-  justify-content: center;
+}
+.child2{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: end;
 }
 .temp{
+  display: inline;
   border-radius: 50%;
   background-color: #ab65ad;
   margin:20px;
-  height: fit-content;
-  width:height;
+  height: 300px;
+  width: 300px;
   padding: 20px;
-  width: 15%;
   -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
@@ -577,12 +590,12 @@ input[type="radio"] {
   to {background-color: #e9056f}
 }
 .Intro {
+  display: inline;
   border-radius: 50%;
   background-color: #54c60e;
-  margin:20px;
-  padding: 20px;
-  height: fit-content;
-  width: 28%;
+  padding: 70px;
+  height: 500px;
+  width: 500px;
   -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
@@ -613,11 +626,11 @@ input[type="radio"] {
   background-color: #bdbeff;
   margin:20px;
   padding: 10px;
-  height: fit-content;
-  width:height;
-  align-items: center;
+  /* height: fit-content;
+  width:height; */
+  /* align-items: center;
   text-align: center; 
-  justify-content: center;
+  justify-content: center; */
   animation-name: funpro;
   animation-duration:10s;
   animation-direction: alternate;
@@ -625,6 +638,7 @@ input[type="radio"] {
   -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
   box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
+  align-items:center;
 }
 body{
   background-position: center 330px; /* Center the image */
@@ -632,22 +646,11 @@ body{
   background-size: 50%; 
 }
 
-.space{
-  width: 100px;
-  height: 100px;
-}
-
-.space1{
-  width: 43%
-}
-.space2{
-  width: 43%
-}
-
 .App-togo {
   padding: 20px;
   padding-bottom: 0px;
   width: 20%;
   border-radius: 50%;
-  opacity:.5
+  opacity:.5;
+  align-items:center;
 }
