@@ -86,6 +86,7 @@ class App extends Component {
             <div className= "child1">
               <img src={togo} className="App-togo" />
               <div className = "temp">
+                <br></br>
               <h1>hi there! i'm updating my personal site: more to come soon!</h1>
               </div>
               <Intro></Intro>

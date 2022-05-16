@@ -5,9 +5,12 @@ class Intro extends Component {
     render() {
         return (
             <div className="Intro">
+                 <p></p>
+                 <br></br>
+                 <br></br>
                 Hi, I'm L Phansalkar, a passionate, driven, collaborative, creative human being who is up-and-coming in the tech world.
                 <p></p>
-                I am passionate about accessibility and socio-political equity through technology. I entered the public education sector ten years ago with a belief that this was the best way to reach disenfranchised populations for early psycho-education intervention. However, after the mass and disproportionate impact of COVID, I quickly realized this was no longer the case. As schools and mental health counseling moved online, so too did I. 
+                I am passionate about accessibility and socio-political equity through technology. As schools and mental health counseling moved online, so too did I. 
                 <p></p>
                 I chose to develop my skills a software engineer as it was a natural fit with my creativity and drive to be an agent of widespread social change. 
                 <p></p>
