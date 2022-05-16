@@ -82,7 +82,7 @@ class App extends Component {
 
             <div className="FunBody" id ="funapp" class ="hidden">
             <div className = "funbox">
-              <img src={togo} className="App-logo" alt="logo" />
+              <img src={togo} className="App-togo" />
               <div className = "temp">
               <h1>hi there! i'm updating my personal site: more to come soon!</h1>
               </div>

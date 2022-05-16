@@ -627,11 +627,27 @@ input[type="radio"] {
   box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
 }
 body{
-  background-position: center 75%; /* Center the image */
+  background-position: center 330px; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: 50%; 
 }
 
+.space{
+  width: 100px;
+  height: 100px;
+}
 
+.space1{
+  width: 43%
+}
+.space2{
+  width: 43%
+}
 
-
+.App-togo {
+  padding: 20px;
+  padding-bottom: 0px;
+  width: 20%;
+  border-radius: 50%;
+  opacity:.5
+}
