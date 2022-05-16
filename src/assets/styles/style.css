@@ -554,10 +554,10 @@ input[type="radio"] {
 }
 .funbox{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap:wrap;
   flex-basis: 0;
-  align-items: center;
+  align-items: left;
   justify-content: center;
 }
 .temp{
