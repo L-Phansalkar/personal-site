@@ -41,6 +41,7 @@ class App extends Component {
         
         else {
           // for the homepage/ boring app
+          document.body.style.backgroundImage= ""
           flag.style.backgroundColor = "";
           hili.style.backgroundColor = "rgba(255, 255, 0, 0.618)";
           borapp.classList.remove('hidden');
