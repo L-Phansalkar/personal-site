@@ -89,7 +89,7 @@ class App extends Component {
                 <br></br>
               <h1>hi there! i'm updating my personal site: more to come soon!</h1>
               </div>
-              <Intro></Intro>
+            
               </div>
               <div className= "child2">
               <ContactMe></ContactMe>
