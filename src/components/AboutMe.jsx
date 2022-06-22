@@ -13,7 +13,7 @@ class AboutMe extends Component {
                 <p></p>
                 I am currently looking for full stack and/or backend software engineer opportunities.
                 <p></p>
-                To view my resume, <a href="/images/622resume.html">click here</a>
+                To view my resume, <a href="../assets/images/622resume.html">click here</a>
             </div>
             )}
 }
