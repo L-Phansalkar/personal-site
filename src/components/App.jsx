@@ -91,10 +91,7 @@ class App extends Component {
               </div>
             
               </div>
-              <div className= "child2">
-              <ContactMe></ContactMe>
-              <FunProj></FunProj>
-              </div>
+          
               </div>
             <p className="made" >made with: React | HTML | JSX | CSS </p>
             </div>
