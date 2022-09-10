@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
-import trm from '../trmm.jpg';
 
 class AboutMe extends Component {
     render() {
         return (
             <div className="AboutMe">
-                Hi, I'm Noelle Phansalkar, a passionate, driven, collaborative, creative human being who is up-and-coming in the tech world.
-                <p></p>
-                I graduated from Fullstack Academy (Grace Hopper), having completed 553 hours over a 13-week intensive JavaScript full stack coding program.
-                <p></p>
-                My background is in child psychology and education, and I hold a BA from Vassar College and a MA from Teachers College, Columbia University (GPA: 3.9). 
-                <p></p>
-                I am currently looking for full stack and/or backend software engineer opportunities.
-                <p></p>
-                {/* To view my resume, <a href="../assets/images/622resume.html">click here</a> */}
+               <h2>top 👋🏽 things to know about me</h2>
+               👆🏽 My strong interpersonal and analytic skills come from a 10 year background in child education and an MA in School Psychology<p></p>
+               ✌🏽 I made my transition to software engineering in November 2021, and have since graduated from Fullstack Academy, coded several group and solo web applications,  <p></p>
+               🤟🏽 The things I loved the most about youth education &mdash; collaboration, initiative, resourcefulness &mdash; are the very same features that draw me to software engineering<p></p>
+               👍🏽 What really excites me is education technology, and I love to explore creative hardware and software <p></p>
+               🤚🏽 When not coding, I&rsquo;m ususally drawing, reading, cooking, or playing strategy games
             </div>
             )}
 }

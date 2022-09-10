@@ -1,156 +1,320 @@
-@media (max-width: 1000px) {
-  .FeatProj, .FeatJob, .ContactMe{
-    flex: 100%;
-  }
-}
-@media (max-width: 700px) {
-  .App-header{
-    flex: 100%
-  }
-  .AboutMe{
-    order: 1;
-    flex: 100%
-  }
-  .App-logo{
-    order: 2;
-    flex: 20%;
+/* CSS style  */
 
-  }
-  .FeatProj{
-    order: 3;
-  } .FeatJob{
-    order: 4;
-  } .ContactMe{
-    order: 5}
-    .Facts{
-      order: 6}
-      .made{
-        order: 7;
-        flex: 20%;
-      }
+/* outermost box -  the root box of the whole page */
+#root{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap ;
+  justify-content: space-around;
+  height: 100%;
+  text-align: center;
+  background-color: antiquewhite;
 }
-@media (max-width: 369px){
-  h2.App-title{
-    line-height:80%;
-  }
-  header.App-header{
-    height:300px
-  }
+
+/* general style for divs  */
+div{
+  display:inline-block;
+  align-items: center;
+  align-content: center;
 }
-.App-title{
-  line-height: .25;
+
+/* styling for the fixed header box at the top of the page */
+#header{
+  position:fixed;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+  z-index:1;
+  display:flex;
+  flex-direction:row;
+  width: 100%;
+  box-sizing: border-box;
 }
-.codingLang{
-  background-color: #6499da;
-    text-align: left;
-    padding-left:40%;
-  }
-  
-.codingLang body {
+
+/* styling for the box containing left side text (name) box */
+#text{
+  text-align: center;
+  left:50px;
+  width:30%;
+  padding: 00px;
+  background-color: #4CAF50;
+}
+
+/* styling for the box containing middle text explaining site interactivity */
+#expo{
+  text-align:right;
+  width:50%;
+  padding: 00px;
+  margin-right:150px;
+}
+
+/* styling for the box containing icons (rightmost) */
+#icon{
+  text-align: right;
+}
+
+
+/* styling for the text in each of the circles - class name is App */
+.App {
+  font-family:"Lucida Console", monospace;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+
+/* general/ default style for each of the circles themselves
+the border-radius property is what makes the boxes circular 
+the opacity < 1 makes them slightly opaque
+the z-index means that they are the third layer (1 being the bottom)
+*/
+.animated-section {
+  width: 650px;
+  height: 650px;
+  border-radius: 1000px; 
+  opacity: 0.5;
+  z-index:3;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* styling for the top, largest circle itself*/
+#top1{
+  top:75px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  width: 800px;
+  height: 800px;
+  padding: 40px;
+  padding-top: 10px;
+  position:relative;
+}
+
+/* styling for hovering over the top, largest circle
+when hovering, the cirlce is at full opacity and a glowing yellow ring appears behind it */
+.animated-section:hover {
+  opacity: 1;
+  filter:drop-shadow(0 0 0.75rem rgb(237, 214, 12));
+}
+
+
+/* styling for the About Me text section within the top circle
+the About Me section is the "top 5 things" 
+*/
+.AboutMe h2{
+  text-align: center;
+}
+.AboutMe h5{
+  text-align: center;
+}
+
+
+/* styling for the outer box of the second row - the box contains three Project circles */
+#threecircles{
+  display: flex;
+  flex-direction: row;
+  padding-top: 125px;
+}
+
+/* styling for the individual project circle containers in the secont row */
+#circle, #three, #four{
+  margin:3px;
+  align-items: center;
+  justify-content: center;
+  width: 475px;
+  height: 475px;
+  position:relative;
+  box-sizing: border-box;
+}
+
+
+/* styling for hovering over each of the second row project circles
+when hovering, the circles are at full opacity with a dark grey drop-shadow 
+each circle also displays a small background emoji at the bottom center  */
+
+/* left circle - heart attack  */
+#circle:hover {
+  background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/anatomical-heart_1fac0.png");
+  background-repeat:no-repeat;
+  background-position: bottom center;
+  background-size: 25%;
+  filter: drop-shadow(30px 15px 4px #2a2929);
+}
+/* middle cicle - pride flag */
+#three:hover {
+  background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/rainbow-flag_1f3f3-fe0f-200d-1f308.png");
+  background-repeat:no-repeat;
+  background-position: bottom center;
+  background-size: 25%;
+  filter: drop-shadow(30px 10px 4px  #2a2929);
+}
+/* right circle - hace gropper */
+#four:hover {
+  background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/google/313/woman-technologist_1f469-200d-1f4bb.png");
+  background-repeat:no-repeat;
+  background-position: bottom center;
+  background-size: 25%;
+  filter: drop-shadow(30px 10px 4px  #2a2929);
+}
+
+/* styling for the third (bottom) row - the thrid row is made up of an outer flex container
+the outer container (thridrow) has two sections - 
+thrirdrowfeature is the two right hand circles stacked on top of each other and 
+anything with venn in the name is part of the venn diagram (made of many flexboxes)*/
+
+/* styling for whole third row, and for the continer that has the top two cirlces of the venn diagram */
+#thirdrow, #vennrow{
+  display: flex;
+  flex-direction: row;
+}
+#thirdrow{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* styling for the outermost venn diagram container - the container for all three venn circles - 
+includes vennrow and bottom circle (ven3)  */
+#venndia {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap ;
+}
+
+/* styling for the outer box containing the two small right side circles in the third row */
+#thirdrowfeature{
   display: flex;
   flex-direction: column;
 }
+
+/* styling for the individual thirdrowfeature circles themselves */
+#threetwo, #threethree{
+  margin:3px;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  position:relative;
+  margin-left:325px;
+}
+
+/* styling for hovering over each of the third row right two circles
+when hovering, the circles are at full opacity and a glowing blue ring appears behind them   */
+#threethree:hover, #threetwo:hover{
+  opacity: 1;
+  filter:drop-shadow(0 0 0.75rem rgb(12, 98, 237));
+}
+
+
+/* styling for the individual venn diagram circles themselves */
+
+/* top two circles */
+#ven1, #ven2{
+  display:fixed;
+  margin:-150px;
+  align-items: center;
+  justify-content: top;
+  width: 475px;
+  height: 475px;
+  position:relative;
+  box-sizing: border-box;
+  border-radius: 1000px; 
+  opacity: 0.5;
+  z-index:3;
+  text-align: right;
+}
+
+/* leftmost circle */
+#ven1{
+  text-align: left;
+}
+
+/* bottom circle */
+#ven3{
+  width: 475px;
+  height: 475px;
+  display:fixed;
+  margin:-150px;
+  border-radius: 1000px; 
+  opacity: 0.5;
+  z-index:3;
+  align-items: left;
+  justify-content: left;
+}
+
+/* styling for the smallest green circle that is superimposed on the intersection of the venn diagram */
+#topofvenn{
+  position: relative;
+  left:23%;
+  width: 200px;
+  height: 200px;
+  margin-bottom:50px;
+  border: 3px solid #73AD21;
+  border-radius: 1000px; 
+  z-index:5;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* styling for hovering over the smallest superimposed green circlw
+when hovering, the text dissapears, and and a picture of my face fills the circle at full opacity*/ 
+#topofvenn:hover{
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4D03AQH63FGdzrnB0w/profile-displayphoto-shrink_400_400/0/1634231429214?e=1668038400&v=beta&t=ok6ut3AixO-RKGd-LOBMaJpGUq1TpQI5JrnhoHxgvDs");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 100%;
+  color:rgba(240, 248, 255, 0);
+  opacity:.75
+}
+
+/* styling for the small canvas inside the top right third row circle */
+canvas{
+  width:150px;
+  height:150px;
+   border: 1px solid black;
+}
+
+
+/* styling for the moving text carousel feature in the top circle (the moving hilighted text) */
+
+/* general text styling for all words - 
+whitespace: nowrap property is very important to insure each word stays on its own line 
+overflow:hidden ensures only one word is shown at a time*/
 .codingLang h1 {
   color: #333;
   font-family: tahoma;
   font-size: 3rem;
   font-weight: 100;
   line-height: 1.5;
-  /* text-transform: uppercase;
-  white-space: nowrap; */
   overflow: hidden;
+  white-space: nowrap;
   position: relative;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-span{
-  display: center;
-}
-
+/* styling for shown word */
 .message {
   background-color: rgba(255, 255, 0, 0.618);
   color: #333;
-  display: inline;
-  text-align: center;
+  display: block;
+  margin-left: 20%;
   overflow: hidden;
   position: absolute;
   width:100%;
   animation: openclose 50s ease-in-out infinite;
-}
-@media (max-width: 400px){
-  h1.App-title{
-    line-height:80%;
-  }
- 
-  .codingLang h1 {
-    color: #333;
-    font-family: tahoma;
-    font-size: 3rem;
-    font-weight: 100;
-    line-height: 1.5;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-  }
-  .message {
-    background-color: rgba(255, 255, 0, 0.618);
-    color: #333;
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    width:100%;
-    animation: openclose 50s ease-in-out infinite;
-  }
-
-  .codingLang{
-    background-color: #6499da;
-      text-align: left;
-      padding-left:10%;
-    }
-    div.Facts{
-      padding:0px
-    }
-    .FeatProj, .FeatJob{
-      padding:0px
-    }
-  }
-
-.App {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    
-  }
- 
-  .App-logo {
-    padding: 20px;
-    padding-bottom: 0px;
-    width: 20%
-  }
-  
-  .App-header {
-    background-color: #0c2036;
-    height:200px;
-    padding: 20px;
-    padding-bottom: 0px;
-    align-items: center;
-    justify-content: center;
-    -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-    -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-    box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  }
-
-  
-  .App-intro {
-    font-size: large;
-  }
-  
-
-
-* .word {
-  font-family: tahoma;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
+/* the frame animation for the moving text - the "top" value was calculated using font size + line height, 
+and percentages were calculted based on the number of words (11) */
 @keyframes openclose {
   0% {
     width: 0;
@@ -160,7 +324,8 @@ span{
   }
 
   7% {
-    width: 285px;
+    top: 0.2rem;
+    
   }
   12% {
     top: 0.2rem;
@@ -168,11 +333,12 @@ span{
   }
   15% {
     top: 0.2rem;
-    width: 0;
+    width: 285px;
   }
  17% {
     top: 0.2rem;
     width: 0;
+    text-indent: 0;
   }
 
   20% {
@@ -290,368 +456,3 @@ span{
   }
 }
 
-.MainBody {
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-  flex-basis: 0;
-  align-items: center;
-  justify-content: center;
-}
-
-.AboutMe {
-  background-color: #226ec0;
-  margin:20px;
-  height:fit-content;
-  padding: 20px;
-  width: 60%;
-  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-}
-
-
-.FeatProj, .FeatJob {
-  background-color: #0658b0;
-  margin:20px;
-  padding: 10px;
-  width: 25%; 
-  align-items: center;
-  text-align: center; 
-  justify-content: center;
-  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  /* height:30% */
-}
-
-.Facts{
-  background-color: #226ec0;
-  padding: 10px;
-  margin:20px;
-  width: 100%; 
-  height:fit-content;
-  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-}
-
-
-.ContactMe{
-  background-color: #6499da;
-  padding: 10px;
-  text-align: center;
-  width: 30%;
-  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  
-}
-
-
-input[type="radio"] {
-  position: absolute;
-  width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
-  height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
-  padding: 0;
-  margin: -1px;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  }
-  .container label{
-    display:block;
-    width:20%;
-    border: 4px solid white;
-    position:absolute;
-    bottom:5px;
-    transition: border-color 0.3s linear;
-  }
-  
-  label.second{
-    left:34%;
-  }
-  label.third{
-    left:68%;
-  }
-  
-  blockquote{
-    margin:02;
-    padding:30px;
-    background-color: #6ce3ed;
-    color: #0c2036;
-    box-shadow: 0 5px 2px rgba(0,0,0,0.1);
-    transition: background-color 0.6s linear ;
-  }
-  
-  .two blockquote:after{
-    border: solid transparent; 
-    border-top-color: purple;
-    border-left-color:purple;
-    border-width: 10px;
-  }
-  
-  .three blockquote:after{
-    border: solid transparent; 
-    border-top-color: #54885F;
-    border-left-color: #54885F;
-    border-width: 10px;
-  }
-  .quotes{
-    position:absolute;
-    align-items: center;
-    color:rgba(255,255,255,0.5);
-    font-size:5em;
-  }
-
-  img{
-    float:left;
-    margin-right: 20px;
-  }
-  .slide{
-    position:absolute;
-    margin:auto;
-    left:-100%;
-    opacity:0;
-    transition: all 0.6s ease-in;
-  }
-  
-  #first:checked ~ label.first {
-    border-width:6px;
-    border-color:#DB532B;
-  }
-  #second:checked ~ label.second {
-    border-width:6px; border-color:purple;
-  }
-  #third:checked ~ label.third {
-    border:6px solid #54885F;
-  }
-  
-  #first:checked ~ div.one {
-    left:0;
-    opacity:1;
-  }
-  #second:checked ~ div.two {
-    left:0;
-    opacity:1;
-  }
-  #third:checked ~ div.three {
-    left:0;
-    opacity:1;
-  }
-
-  a{
-    color:#ccc;
-  }
-  .container{
-    width:500px;
-    min-height:315px;
-    margin:0 auto;
-    position:relative;
-    overflow:hidden;
-  }
-  .Factbox{
-    display: flex;
-    direction: column;
-  }
-  .slide h3{
-    line-height: .25;
-  }
-  input{
-    width: 50%
-  }
-  textarea{
-    width: 75%
-  }
-
-  .made{
-    margin:20px;
-    background-color: #0c2036;
-    height:fit-content;
-    align-items: center;
-    justify-content: center;
-    -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-    -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-    box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  }
-  
-  .switch {
-    position: absolute;
-    display: block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
- 
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 40s, opacity 20s linear;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-  
-  .hidden {
-    display:none
-}
-
-
-/* funapp */
-
-.FunBody {
-  background-color: peru;
-  color: black;
-}
-.funbox{
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-  flex-basis: 0;
-  /* align-items: center;
-  justify-content: center; */
-  
-}
-.child1{
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  align-items: left;
-}
-.child2{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  align-items: end;
-}
-.temp{
-  display: inline;
-  border-radius: 50%;
-  background-color: #ab65ad;
-  margin:20px;
-  height: 300px;
-  width: 300px;
-  padding: 20px;
-  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-}
-@keyframes intrro {
-  from {background-color: #54c60e}
-  to {background-color: #e9056f}
-}
-.Intro {
-  display: inline;
-  text-align: center;
-  border-radius: 50%;
-  background-color: #54c60e;
-  margin-left:20px;
-  padding: 70px;
-  height: 500px;
-  width: 500px;
-  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  animation-name: intrro;
-  animation-duration:15s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
-.made{
-  margin:20px;
-  background-color: #0c2036;
-  color:white;
-  height:fit-content;
-  align-items: center;
-  justify-content: center;
-  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-}
-@keyframes funpro {
-  from {background-color: #bdbeff}
-  to {background-color: #3d00ad}
-}
-.FunProj{
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background-color: #bdbeff;
-  margin:20px;
-  padding: 10px;
-
-  animation-name: funpro;
-  animation-duration:10s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  -webkit-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  -moz-box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  box-shadow: 0px 7px 10px 0px rgba(51,81,106,1);
-  align-items:center;
-}
-body{
-  background-position: center 330px; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 50%; 
-}
-
-.App-togo {
-  padding: 20px;
-  padding-bottom: 0px;
-  width: 300px;
-  height:350px;
-  border-radius: 50%;
-  opacity:.5;
-  align-items:center;
-  margin-top:20px;
-  margin-left:20px;
-}

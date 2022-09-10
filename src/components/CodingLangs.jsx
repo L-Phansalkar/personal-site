@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
+
 class CodingLangs extends Component {
     render() {
         return (
             <div className="codingLang">
             <h1>
-            <span>-></span>
-            <div className="message" id ="hili">
-            <div className="word1">JavaScript</div>
-            <div class="word2">React/Redux</div>
-            <div class="word4">PostgreSQL</div>
-            <div class="word5">API </div>
-            <div class="word6">Node.js</div>
-            <div class="word7">Git(GitHub)</div>
-            <div class="word8">socket.io</div>
-            <div class="word9">DOM</div>
-            <div class="word10">windows.localStorage</div>
-            <div class="word11">CSS(flexbox)</div>
+            <span>____________________</span>
+            <div className="message" >
+            <div >JavaScript</div><br></br>
+            <div >React</div><br></br>
+            <div >Express</div><br></br>
+            <div >PostgreSQL</div><br></br>
+            <div >Node.js</div><br></br>
+            <div >HTML&CSS</div><br></br>
+            <div >Git(GitHub)</div><br></br>
+            <div >CRUD apps</div><br></br>
+            <div >REST API</div><br></br>
+            <div >CSS(flexbox)</div>
             </div>
             </h1>
             </div>
+          
             )}
 }
 export default CodingLangs
