@@ -22,12 +22,10 @@ div{
 #header{
   position:sticky;
   top: 0;
-  background-color: green;
-  border: 2px solid #4CAF50;
   z-index:1;
   display:flex;
   flex-direction:row; 
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
   align-self: flex-start;
 }
@@ -36,18 +34,12 @@ div{
 #text{
   text-align: center;
   left:50px;
-  width:30%;
+  width:95%;
   padding: 00px;
-  background-color: #4CAF50;
+
 }
 
-/* styling for the box containing middle text explaining site interactivity */
-#expo{
-  text-align:right;
-  width:50%;
-  padding: 00px;
-  margin-right:150px;
-}
+
 
 /* styling for the box containing icons (rightmost) */
 #icon{
@@ -83,7 +75,7 @@ the z-index means that they are the third layer (1 being the bottom)
 
 /* styling for the top, largest circle itself*/
 #top1{
-  top:75px;
+  top:25px;
   align-items: center;
   justify-content: center;
   margin-left: 200px;
@@ -93,13 +85,6 @@ the z-index means that they are the third layer (1 being the bottom)
   padding: 40px;
   padding-top: 10px;
   position:relative;
-}
-
-/* styling for hovering over the top, largest circle
-when hovering, the cirlce is at full opacity and a glowing yellow ring appears behind it */
-.animated-section:hover {
-  opacity: 1;
-  filter:drop-shadow(0 0 0.75rem rgb(237, 214, 12));
 }
 
 
@@ -118,7 +103,7 @@ the About Me section is the "top 5 things"
 #threecircles{
   display: flex;
   flex-direction: row;
-  padding-top: 125px;
+  padding-top: 50px;
 }
 
 /* styling for the individual project circle containers in the secont row */
@@ -143,7 +128,7 @@ each circle also displays a small background emoji at the bottom center  */
   background-repeat:no-repeat;
   background-position: bottom center;
   background-size: 25%;
-  filter: drop-shadow(30px 15px 4px #2a2929);
+  /* filter: drop-shadow(30px 15px 4px #2a2929); */
 }
 /* middle cicle - pride flag */
 #three:hover {
@@ -151,7 +136,7 @@ each circle also displays a small background emoji at the bottom center  */
   background-repeat:no-repeat;
   background-position: bottom center;
   background-size: 25%;
-  filter: drop-shadow(30px 10px 4px  #2a2929);
+  /* filter: drop-shadow(30px 10px 4px  #2a2929); */
 }
 /* right circle - hace gropper */
 #four:hover {
@@ -159,7 +144,7 @@ each circle also displays a small background emoji at the bottom center  */
   background-repeat:no-repeat;
   background-position: bottom center;
   background-size: 25%;
-  filter: drop-shadow(30px 10px 4px  #2a2929);
+  /* filter: drop-shadow(30px 10px 4px  #2a2929); */
 }
 
 /* styling for the third (bottom) row - the thrid row is made up of an outer flex container
@@ -204,10 +189,10 @@ includes vennrow and bottom circle (ven3)  */
 
 /* styling for hovering over each of the third row right two circles
 when hovering, the circles are at full opacity and a glowing blue ring appears behind them   */
-#threethree:hover, #threetwo:hover{
+/* #threethree:hover, #threetwo:hover{
   opacity: 1;
   filter:drop-shadow(0 0 0.75rem rgb(12, 98, 237));
-}
+} */
 
 
 /* styling for the individual venn diagram circles themselves */
@@ -458,18 +443,3 @@ and percentages were calculted based on the number of words (11) */
 }
 
 
-.nice-header {
-  position: relative;
-  height: 300px;
-  background: center center;
-  background-size: cover;
-  background-image: url(http://www.boeing.com/resources/boeingdotcom/commercial/787/assets/images/marquee-787.jpg);
-}
-
-.header-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgb(0,0,0);
-  opacity: 0.2;
-}
