@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap ;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   height: 100%;
   text-align: center;
   background-color: antiquewhite;
@@ -18,33 +18,18 @@ div{
   align-content: center;
 }
 
-/* styling for the fixed header box at the top of the page */
-#header{
-  position:sticky;
-  top: 0;
-  z-index:1;
-  display:flex;
-  flex-direction:row; 
-  width: 100%;
-  box-sizing: border-box;
-  align-self: flex-start;
-}
+
 
 /* styling for the box containing left side text (name) box */
 #text{
   text-align: center;
-  left:50px;
-  width:95%;
-  padding: 00px;
-
+  width:90%;
+  height: 175px;
 }
 
 
 
-/* styling for the box containing icons (rightmost) */
-#icon{
-  text-align: right;
-}
+
 
 
 /* styling for the text in each of the circles - class name is App */
@@ -442,4 +427,69 @@ and percentages were calculted based on the number of words (11) */
   }
 }
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
+
+.content {
+  position: relative;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+/* styling for the box containing icons (rightmost) */
+#icon{
+ align-items: top;
+  position:fixed;
+  margin-bottom:90%;
+  margin-left: 90%;
+ padding: 0px;
+  width:200px;
+}

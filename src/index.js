@@ -98,13 +98,7 @@ export default class App extends React.Component {
     return (
       <div id="root">
         {/* this is the header */}
-        <div id="header">
-          <div id="text">
-            <h1>L PHANSALKAR</h1>
 
-            <h2>software engineer</h2>
-          </div>
-        </div>
         <div id="icon">
           <a href="https://github.com/gender-outlaw" target="_blank">
             <AiFillGithub size={60} />
@@ -122,6 +116,14 @@ export default class App extends React.Component {
           >
             <GrDocumentUser size={60} />
           </a>
+        </div>
+        <div id="text">
+          <section>
+            <div className="content">
+              <h2>L Phansalkar</h2>
+              <h2>L Phansalkar</h2>
+            </div>
+          </section>
         </div>
 
         {/* this is the first, v large circle */}
