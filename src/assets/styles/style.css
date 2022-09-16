@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap ;
-  /* justify-content: space-around; */
   height: 100%;
   text-align: center;
   background-color: antiquewhite;
@@ -92,12 +91,12 @@ the About Me section is the "top 5 things"
 }
 
 /* styling for the individual project circle containers in the secont row */
-#circle, #three, #four{
-  margin:3px;
+ #three, #four{
+  margin:30px;
   align-items: center;
   justify-content: center;
-  width: 475px;
-  height: 475px;
+  width: 500px;
+  height: 500px;
   position:relative;
   box-sizing: border-box;
 }

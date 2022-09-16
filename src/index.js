@@ -167,7 +167,7 @@ export default class App extends React.Component {
 
         {/* this is the next line of three cricles for projects */}
         <div id="threecircles">
-          <AnimatedBg
+          {/* <AnimatedBg
             style={this.state.midStyl}
             colors={[
               "#7ce2d8",
@@ -194,7 +194,7 @@ export default class App extends React.Component {
             randomMode
           >
             <HeartAttack></HeartAttack>
-          </AnimatedBg>
+          </AnimatedBg> */}
 
           <AnimatedBg
             style={this.state.midStyl}
