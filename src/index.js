@@ -37,7 +37,7 @@ export default class App extends React.Component {
   };
 
   listenScrollEvent = (e) => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 300) {
       this.setState({
         topStyl: {
           opacity: 0.5,
@@ -64,7 +64,7 @@ export default class App extends React.Component {
         },
       });
     }
-    if (window.scrollY > 800) {
+    if (window.scrollY > 1000) {
       this.setState({
         midStyl: {
           opacity: 0.5,
