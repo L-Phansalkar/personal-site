@@ -7,6 +7,7 @@ import AnimatedBg from "react-animated-bg";
 // these are the react components
 import AboutMe from "./components/AboutMe";
 import CodingLangs from "./components/CodingLangs";
+import VennDiagram from "./components/Venn";
 import HeartAttack from "./components/HeartAttack";
 import PrideApi from "./components/PrideApi";
 import HaceGropper from "./components/HaceGropper";
@@ -98,7 +99,6 @@ export default class App extends React.Component {
     return (
       <div id="root">
         {/* this is the header */}
-
         <div id="icon">
           <a href="https://github.com/gender-outlaw" target="_blank">
             <AiFillGithub size={60} />
@@ -125,7 +125,6 @@ export default class App extends React.Component {
             </div>
           </section>
         </div>
-
         {/* this is the first, v large circle */}
         <AnimatedBg
           style={this.state.topStyl}
@@ -164,7 +163,6 @@ export default class App extends React.Component {
             <h1>PROJECTS</h1>
           </div>
         </AnimatedBg>
-
         {/* this is the next line of three cricles for projects */}
         <div id="threecircles">
           {/* <AnimatedBg
@@ -254,6 +252,7 @@ export default class App extends React.Component {
             <HaceGropper></HaceGropper>
           </AnimatedBg>
         </div>
+        {/* <VennDiagram></VennDiagram> */}
 
         {/* this is the third row - the one with venn diagram and two smol */}
         {/* this is the opening tag of the box for the entire third row */}
