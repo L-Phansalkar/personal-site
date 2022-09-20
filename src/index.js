@@ -7,7 +7,7 @@ import AnimatedBg from "react-animated-bg";
 // these are the react components
 import AboutMe from "./components/AboutMe";
 import CodingLangs from "./components/CodingLangs";
-import VennDiagram from "./components/Venn";
+// import VennDiagram from "./components/Venn";
 import HeartAttack from "./components/HeartAttack";
 import PrideApi from "./components/PrideApi";
 import HaceGropper from "./components/HaceGropper";
