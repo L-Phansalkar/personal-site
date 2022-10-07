@@ -100,7 +100,7 @@ export default class App extends React.Component {
       <div id="root">
         {/* this is the header */}
         <div id="icon">
-          <a href="https://github.com/gender-outlaw" target="_blank">
+          <a href="https://github.com/L-Phansalkar" target="_blank">
             <AiFillGithub size={60} />
           </a>
           <a href="https://www.linkedin.com/in/lphansalkar/" target="_blank">
