@@ -4,7 +4,7 @@ class ECommerce extends Component {
     render() {
         return (
             <div className="App">
-            <a href="https://youtu.be/DnS9-V94hpg" target="_blank">
+            <a href="https://billy-bass-pro-shop.herokuapp.com/" target="_blank">
               <h2>Billy Bass Pro Shop</h2>
             </a>
             <h4>
