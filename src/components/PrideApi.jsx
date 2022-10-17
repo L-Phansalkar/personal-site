@@ -7,7 +7,7 @@ class PrideApi extends Component {
             <a href="http://pr1deflags.herokuapp.com/" target="_blank">
               <h2>Pride Flag API</h2>
             </a>
-            <h3>tech stack: PostgreSQL | Express | React | Node.JS </h3>
+            <h4>PostgreSQL | Express | React | Node.JS </h4>
             <h5>API and database of 59 pride flag images</h5>
             <h5>
               created and implemented a usable API from scratch, complete with

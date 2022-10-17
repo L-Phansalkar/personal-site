@@ -89,12 +89,12 @@ the About Me section is the "top 5 things"
 }
 
 /* styling for the individual project circle containers in the secont row */
- #three, #four{
-  margin:30px;
+ #three, #four, #circle{
+  margin:10px;
   align-items: center;
   justify-content: center;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   position:relative;
   box-sizing: border-box;
 }

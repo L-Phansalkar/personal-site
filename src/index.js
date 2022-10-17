@@ -8,7 +8,7 @@ import AnimatedBg from "react-animated-bg";
 import AboutMe from "./components/AboutMe";
 import CodingLangs from "./components/CodingLangs";
 // import VennDiagram from "./components/Venn";
-import HeartAttack from "./components/HeartAttack";
+import ECommerce from "./components/E-Commerce";
 import PrideApi from "./components/PrideApi";
 import HaceGropper from "./components/HaceGropper";
 import Achievements from "./components/Achievements";
@@ -165,7 +165,7 @@ export default class App extends React.Component {
         </AnimatedBg>
         {/* this is the next line of three cricles for projects */}
         <div id="threecircles">
-          {/* <AnimatedBg
+          <AnimatedBg
             style={this.state.midStyl}
             colors={[
               "#7ce2d8",
@@ -191,8 +191,8 @@ export default class App extends React.Component {
             id="circle"
             randomMode
           >
-            <HeartAttack></HeartAttack>
-          </AnimatedBg> */}
+            <PrideApi></PrideApi>
+          </AnimatedBg>
 
           <AnimatedBg
             style={this.state.midStyl}
@@ -220,7 +220,7 @@ export default class App extends React.Component {
             id="three"
             randomMode
           >
-            <PrideApi></PrideApi>
+            <ECommerce></ECommerce>
           </AnimatedBg>
 
           <AnimatedBg
